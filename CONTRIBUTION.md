@@ -35,3 +35,7 @@ $ git push origin {new-branch-name}
 ```
 
 > You should commit all the files changed before pushing the changes made to your remote repository. While pushing the changes make sure that you push to your new branch created in your local repository.
+
+<h4><b>5. </b>Create a pull request.(PR)</h4>
+
+> Once you've pushed changes to your remote repository under the {new-branch-name} created, create a pull request, this informs the contributors of the repository that there are new changes made that need to be reviewed. After reviewing the changes the pull request can then be merged to the main branch if there are no conflicts, you are allowed to delete a branch after merging the changes made in it.
