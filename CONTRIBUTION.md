@@ -16,7 +16,18 @@ $ git clone https://github.com/<github.username>/ReactGroup.git
 
 > Cloning a repository should assist you to draw all the source code that is in your remote repository into your local repository. In other words downloading the source code from your github account, make sure you clone 
 
-<h4><b>3. </b>Create a new branch and chekout to it.</h4>
+
+<h4><b>3. </b>Install all dependancy packages.</h4>
+
+```bash
+
+$ npm install
+```
+
+> After cloning a React repository, you will notice that the <code>node_modules</code> folder is not present. This is because it is included in the <code>.gitignore</code> file while the project is being pushed to github. The list of packages the React project use are included in the <code>package.json</code> file, to install them you need to run the command <code>npm install</code>, this will create a <code>node_modules</code> folder with all the dependancies needed for the project.
+
+
+<h4><b>4. </b>Create a new branch and checkout to it.</h4>
 
 ```bash
 
@@ -26,7 +37,7 @@ $ git checkout {new-branch-name}
 
 > In your local repository, create a new branch with a name of your choice, switch to the new branch created and make it your working branch where you will add and commit the changes made in the repository.
 
-<h4><b>4. </b>Make changes, commit and push to your remote repository.</h4>
+<h4><b>5. </b>Make changes, commit and push to your remote repository.</h4>
 
 ```bash
 $ git add .
@@ -36,6 +47,6 @@ $ git push origin {new-branch-name}
 
 > You should commit all the files changed before pushing the changes made to your remote repository. While pushing the changes make sure that you push to your new branch created in your local repository.
 
-<h4><b>5. </b>Create a pull request.(PR)</h4>
+<h4><b>6. </b>Create a pull request.(PR)</h4>
 
 > Once you've pushed changes to your remote repository under the {new-branch-name} created, create a pull request, this informs the contributors of the repository that there are new changes made that need to be reviewed. After reviewing the changes the pull request can then be merged to the main branch if there are no conflicts, you are allowed to delete a branch after merging the changes made in it.
