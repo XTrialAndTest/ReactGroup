@@ -5,10 +5,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [name, setName] = useState([])
   useEffect(()=>{
-
-    const results = data.map((names)=>names.name)
-    console.log(results)
-    setName(results)
+    setName(data)
   }, [])
   return (
     <div className="App">
