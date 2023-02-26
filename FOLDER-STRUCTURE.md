@@ -1,0 +1,3 @@
+<h1 align='center'>REACT FOLDER STRUCTURE.</h1>
+
+The React documentation does not have specific rules or opinions on how to structure your React files and folders. Most of the times you might be confused on how to structure your files and folders that build up your React project. There are few recommendations on how to structure your project (for solo projects, mid-scale projects or even large-scale projects). This article will guide you on how to structure you projects for large-scale applications, a best practice that will allow cross-functional teams to work on your project too making it easy for them to understand.
