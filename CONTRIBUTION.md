@@ -22,9 +22,13 @@ $ git clone https://github.com/<github.username>/ReactGroup.git
 ```bash
 
 $ npm install
+
+then
+
+$ npm start
 ```
 
-> After cloning a React repository, you will notice that the <code>node_modules</code> folder is not present. This is because it is included in the <code>.gitignore</code> file while the project is being pushed to github. The list of packages the React project use are included in the <code>package.json</code> file, to install them you need to run the command <code>npm install</code>, this will create a <code>node_modules</code> folder with all the dependancies needed for the project.
+> After cloning a React repository, you will notice that the <code>node_modules</code> folder is not present. This is because it is included in the <code>.gitignore</code> file while the project is being pushed to github. The list of packages the React project use are included in the <code>package.json</code> file, to install them you need to run the command <code>npm install</code>, this will create a <code>node_modules</code> folder with all the dependancies needed for the project. <code>npm start</code> will start the project in your browser.
 
 
 <h4><b>4. </b>Create a new branch and checkout to it.</h4>
