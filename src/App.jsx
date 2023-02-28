@@ -1,4 +1,4 @@
-// import './App.scss';
+import './components/Mush/Mush.scss';
 import data from './data.json';
 import DisplayData from './components/Mush/DisplayData';
 import { useEffect, useState } from 'react';
@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <div className='App'>
-        <h1>Names of People</h1>
         <DisplayData names={name} />
       </div>
       <div className='mycontainer'>
