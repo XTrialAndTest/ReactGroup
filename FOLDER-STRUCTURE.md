@@ -17,7 +17,19 @@ After creating a new React App with the commend <code>npx create-react-app</code
 
 > Folder structure with features and components
 <img src='./static/final-closed.png'></img>
+
+
 Before diving into the folder structure above, take note of some important points that might come in handy when you create your own folder structure.
 
+- Separation of concerns is the process of dividing your files and folders, such that each section addresses a separate concern. A concern is a set of information that affects your application. Separation of concerns is used to improve modularity of a program by reducing its interdependence on other elements. This is a good practice to follow when structuring your folders and files.
 - Avoid deep nesting of folders and files- deep nesting makes importing the components made relatively hard for importing them.
-- Don't over think it - when starting a project it is advisable to use any form of folder structure you're comfortable with untill the components start adding up is when you can refractor and categories your filess.
+- Don't over think it - when starting a project it is advisable to use any form of folder structure you're comfortable with untill the components start adding up is when you can refractor and categories your files.
+
+The folder structure above basically shows you a sample of a complete folder structure with some of the utilities and features you'll mainly be using in your react application. 
+
+<img src='./static/final-opened.png'></img>
+
+The folder structure above shows you the contents of the <code>src</code> folder. This is a best practice where by grouping of related components and feature in your react application is key. 
+- The components folder contains mainly all reusable code in your react application eg: button, footer. Each of the component is nested within a folder and the name of the component given index.js which is the file which represents the public interface of the folder where everything gets exported that's relevant to the outside world. Inside the button folder we have all the files related to buttons eg: button.module.scss and button.test.js. 
+- The <code>utils</code> folder contains all the helper functions that are used in your application. 
+- The <code>features</code> folder contains all the features of your application Which are mainly components that are not reused. Reusable components in the components folder can be fed into the features' components. Lets say the user and profile components both need a button, the button component will be imported to the features folder and used in the user and profile components. 
