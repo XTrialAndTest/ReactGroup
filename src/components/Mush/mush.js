@@ -1,4 +1,4 @@
-import '../components/Mush.scss';
+import './Mush.scss';
 let Mush = ({ name, job, year }) => {
   return (
     <>

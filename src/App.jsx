@@ -1,9 +1,9 @@
-import './App.css';
+// import './App.scss';
 import data from './data.json';
-import DisplayData from './components/DisplayData';
+import DisplayData from './components/Mush/DisplayData';
 import { useEffect, useState } from 'react';
-import Mush from './components/mush';
-import mydata from './components/Mush.json';
+import Mush from './components/Mush/mush';
+import mydata from './components/Mush/Mush.json';
 function App() {
   const [name, setName] = useState([]);
   useEffect(() => {
