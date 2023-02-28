@@ -1,18 +1,31 @@
-
-import Styled from "./components/style-options/Styled";
-
-/**
- * Feel free to delete the Styled Component. It is there for test case purposes only
- * Import your components and insert them inside the Fragqment <> </> tags placed for you.
- * 
- */
+import './App.css';
+import data from './data.json';
+import DisplayData from './components/DisplayData';
+import { useEffect, useState } from 'react';
+import Mush from './components/mush';
+import mydata from './components/Mush.json';
 function App() {
-
+  const [name, setName] = useState([]);
+  useEffect(() => {
+    const results = data.map((names) => names.name);
+    console.log(results);
+    setName(results);
+  }, []);
   return (
     <>
-    <Styled />
+      <div className='App'>
+        <h1>Names of People</h1>
+        <DisplayData names={name} />
+      </div>
+      <div className='mycontainer'>
+        <h1>the deadly squad</h1>
+        <div className='mush'>
+          {mydata.map((single) => {
+            return <Mush {...single} key={single.id} />;
+          })}
+        </div>
+      </div>
     </>
-
   );
 }
 
