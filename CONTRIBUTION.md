@@ -14,7 +14,7 @@
 $ git clone https://github.com/<github.username>/ReactGroup.git
 ```
 
-> Cloning a repository should assist you to draw all the source code that is in your remote repository into your local repository. In other words downloading the source code from your github account, make sure you clone 
+> Cloning a repository should assist you to draw all the source code that is in your remote repository into your local repository. In other words downloading the source code from your github account, make sure you clone the repository from your forked repository and not the main repository.
 
 
 <h4><b>3. </b>Install all dependancy packages.</h4>
@@ -22,9 +22,13 @@ $ git clone https://github.com/<github.username>/ReactGroup.git
 ```bash
 
 $ npm install
+
+then
+
+$ npm start
 ```
 
-> After cloning a React repository, you will notice that the <code>node_modules</code> folder is not present. This is because it is included in the <code>.gitignore</code> file while the project is being pushed to github. The list of packages the React project use are included in the <code>package.json</code> file, to install them you need to run the command <code>npm install</code>, this will create a <code>node_modules</code> folder with all the dependancies needed for the project.
+> After cloning a React repository, you will notice that the <code>node_modules</code> folder is not present. This is because it is included in the <code>.gitignore</code> file while the project is being pushed to github. The list of packages the React project use are included in the <code>package.json</code> file, to install them you need to run the command <code>npm install</code>, this will create a <code>node_modules</code> folder with all the dependancies needed for the project. <code>npm start</code> will start the project in your browser.
 
 
 <h4><b>4. </b>Create a new branch and checkout to it.</h4>
@@ -50,3 +54,7 @@ $ git push origin {new-branch-name}
 <h4><b>6. </b>Create a pull request.(PR)</h4>
 
 > Once you've pushed changes to your remote repository under the {new-branch-name} created, create a pull request, this informs the contributors of the repository that there are new changes made that need to be reviewed. After reviewing the changes the pull request can then be merged to the main branch if there are no conflicts, you are allowed to delete a branch after merging the changes made in it.
+
+<h4><b>7. </b>Delete branch after merge, sync your main forked branch with the main branch of the owner's repo.</h4>
+
+> After merging the changes made in your new branch to the main branch, you can delete the branch. To delete a branch, run the command <code>git branch -d {new-branch-name}</code>. To sync your main branch with the main branch of the owner's repository, run the command <code>git pull upstream main</code>. This will pull all the changes made in the main branch of the owner's repository into your main branch. Alternatively you can use github GUI to delete a branch and sync your main branch with the main branch of the owner's repository.
