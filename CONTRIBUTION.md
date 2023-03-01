@@ -1,7 +1,7 @@
 <h1 align='center'>GUIDE ON HOW TO CONTRIBUTE TO THE REPOSITORY</h1>
 
 <h3>Steps</h3>
-
+<strong>NOTE: </strong>These steps are meant for those who haven't cloned the repository before, if you have cloned the repository before, you can skip to <a href='#step4'>step 4</a>.
 <h4><b>1. </b>Fork the repository.</h4>
 
 > Forking allows you to make a copy of the main repository to your main github account so that you can make changes in it. 
@@ -31,7 +31,8 @@ $ npm start
 > After cloning a React repository, you will notice that the <code>node_modules</code> folder is not present. This is because it is included in the <code>.gitignore</code> file while the project is being pushed to github. The list of packages the React project use are included in the <code>package.json</code> file, to install them you need to run the command <code>npm install</code>, this will create a <code>node_modules</code> folder with all the dependancies needed for the project. <code>npm start</code> will start the project in your browser.
 
 
-<h4><b>4. </b>Create a new branch and checkout to it.</h4>
+<strong>NOTE</strong> Always <code> git pull </code> before you start working on a project to make sure you have the latest version of the project.
+<h4 id='step4'><b>4. </b>Create a new branch and checkout to it.</h4>
 
 ```bash
 
